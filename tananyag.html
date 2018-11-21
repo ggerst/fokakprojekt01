@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Tananyagok</title>
+</head>
+
+<body style="background-color:floralwhite">
+  <h1 style="text-align: center">Tananyagok</h1>
+  <div style="text-align: center">
+    <a href="index.html">Főoldal</a>&nbsp;&nbsp;&nbsp;
+    <a href="csapat.html">Csapatunk</a>&nbsp;&nbsp;&nbsp;
+    <a href="contact.html">Kapcsolat</a>&nbsp;&nbsp;&nbsp;
+    <a href="szamologepek.html">Számológépek</a>&nbsp;&nbsp;&nbsp;
+  </div>
+  <h3>Hasznos weboldalak</h3>
+  <ol>
+    <li>
+      <a target="https://developer.mozilla.org/hu/" href="https://developer.mozilla.org/hu/">
+        <img src="/img/MDN.JPG" alt="MDN Webpage" />
+      </a>
+      <input type="button" value="short description" onclick="MDN()" />
+    </li>
+    <li>
+      <a target="https://www.w3schools.com/html" href="https://www.w3schools.com/html">
+        <img src="/img/w3Schools.JPG" alt="w3Schools Webpage" />
+      </a>
+      <input type="button" value="short description" onclick="w3()" />
+    </li>
+  </ol>
+  <br />
+  <h3>Hasznos program</h3>
+  <ul>
+    <li>
+      <a target="https://slack.com/" href="https://slack.com/">
+        <img src="/img/slack.JPG" alt="Slack Webpage" />
+      </a>
+      <input type="button" value="short description" onclick="slack()" />
+      <a target="https://www.youtube.com/watch?v=9RJZMSsH7-g" href="https://www.youtube.com/watch?v=9RJZMSsH7-g">Short
+        video</a>
+    </li>
+  </ul>
+  <br>
+  <h3>Hasznos kódok</h3>
+
+
+  Dátum pl.: születési idő megadása:<input type="date" name="bday" />
+  <input type="button" value="kód" onclick="bday()" />
+  <br>
+  <br>
+  Új oldal menyitása <a target="tananyag.html" href="tananyag.html"> (próba) </a>
+  <input type="button" value="kód" onclick="newTab()" />
+  <br>
+  <br>
+  Szövegrész középre rendezése<input type="button" value="kód" onclick="textAlignCenter()" />
+  <br>
+  <br>
+  <a href="index.html">index</a>
+
+  <script>
+    function MDN() {
+      var textMDN = "Tanulói portál HTML-hez, JavaScript-hez és CSS-hez";
+      alert(textMDN);
+    }
+
+    function w3() {
+      var textw3 =
+        "A világ legnagyobb webfejlesztő oldala. Hasznos pl.: kódok gyakorlására és azonnali tesztelésére IDE nélküli környezetben";
+      alert(textw3);
+    }
+
+    function slack() {
+      var textslack =
+        "Fájlmegosztás és kategórikus kommunikációs csatornák megnyitása. Ajánlott pl.: projekmunkákhoz";
+      alert(textslack);
+    }
+
+    function bday() {
+      var textbday = '<input type="date" name="bday">';
+      alert(textbday);
+    }
+
+    function newTab() {
+      var textnewTab =
+        '<a target="tananyag.html" href="tananyag.html> "href" mellé a "target" parancsot is berakjuk';
+      alert(textnewTab);
+    }
+
+    function textAlignCenter() {
+      var textForTextAlignCenter = '<p style="text-align: center"> "Középre rendezett szöveg" </p>';
+      alert(textForTextAlignCenter);
+    }
+  </script>
+</body>
+
+</html>
